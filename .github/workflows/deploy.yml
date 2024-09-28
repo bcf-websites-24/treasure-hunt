@@ -21,14 +21,13 @@ jobs:
           echo TH_SECRET='${{ secrets.TH_SECRET }}' >> .env
           cat .env
 
-      # Install doctl.
       - name: Install doctl
         uses: digitalocean/action-doctl@v2
         with:
           token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
 
       - name: Build container image
-        run: docker build -f Dockerfile.cron -t registry.digitalocean.com/csefest2024-registry/csefest2024-hunt:$(echo $GITHUB_SHA | head -c7) .
+        run: docker build -t registry.digitalocean.com/csefest2024-registry/csefest2024-hunt:$(echo $GITHUB_SHA | head -c7) .
 
       - name: Log in to DigitalOcean Container Registry with short-lived credentials
         run: doctl registry login --expiry-seconds 1200
