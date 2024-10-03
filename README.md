@@ -17,7 +17,7 @@ In the **virtualenv**, type `python app.py` to start the server. After it starts
  The database file named "**hunt.db**" contains 3 tables. Those are: 
  
 	 - **User**
-	 This one contains **id**, **username**, **password** (sha256), **last input time**, **levels** they have completed and a special **token**. The token contains the serial of the puzzles of the treasure hunt. i.e: 12346578 means that the serial the puzzles will come in is: 1st, 2nd, 3rd, 4th, 6th, 5th, 7th, 8th
+	 This one contains **id**, **username**, **password** (sha256), **last input time**, **levels** they have completed and a special **token**. The token contains the serial of the puzzles of the treasure hunt. i.e: 123465789 means that the serial the puzzles will come in is: 1st, 2nd, 3rd, 4th, 6th, 5th, 7th, 8th, 9th
 
 	- **Quiz**
 	This one contains **id** and **answer** to the specific puzzle. The id of the puzzle works as the name of the puzzle (image file).
