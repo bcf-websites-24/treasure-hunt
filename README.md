@@ -1,4 +1,4 @@
-# Reception Treasure Hunt!
+# Fest Treasure Hunt!
 **Treasure hunt website made for CSE Freshers' Reception.**
 
 ##  Project Overview
