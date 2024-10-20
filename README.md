@@ -1,4 +1,4 @@
-# Fest Treasure Hunt!
+# Fest 2024 Treasure Hunt!
 **Treasure hunt website made for CSE Freshers' Reception.**
 
 ##  Project Overview
